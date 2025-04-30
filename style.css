@@ -1444,50 +1444,20 @@ a {
 }
 
 @media screen and (max-width: 400px) {
-    .navbar ul {
+    .home {
+        /* max-width: 100%; */
         display: flex;
-        gap: -200px;
-    }
-
-    .navbar ul li {
-        list-style: none;
-        margin-left: 7px;
-        /* gap: 200px; */
-
-    }
-
-    .navbar ul li a {
-        font-size: 10px;
-        font-weight: 300;
-        transition: .5s;
-    }
-
-    .navbar .logo {
-        font-size: 17px;
-        font-weight: 700;
-    }
-
-    .navbar {
-        position: absolute;
-        left: 20px;
-        right: 0;
-        width: 100%;
-        padding: 25px 9%;
-        /* background: rgb(34, 0, 255); */
-        display: flex;
-        justify-content: space-between;
+        flex-direction: column-reverse;
         align-items: center;
-        z-index: 100;
+        gap: 2px;
+        height: 60vh;
+        padding: 90px 4% 0;
+        /* color: #fff; */
         visibility: hidden;
         opacity: 0;
         animation: show-content 1.5s linear forwards;
-        animation-delay: 1.2s;
+        animation-delay: 1.6s;
     }
-
-    .home-info h1 {
-        font-size: 18px;
-    }
-
     .home-img .img-box {
         position: relative;
         width: 30vw;
@@ -1499,7 +1469,7 @@ a {
         justify-items: center;
         align-items: center;
         overflow: hidden;
-        top: -180px;
+        top: -20px;
     }
 
     .home-img .img-box .img-item img {
@@ -1509,24 +1479,5 @@ a {
         width: 120%;
         object-fit: fill;
         mix-blend-mode: lighten;
-    }
-
-    .home-info .btn-sci .sci {
-        margin-left: 2px;
-        margin-top: 13px;
-    }
-
-    .home {
-        /* max-width: 100%; */
-        display: flex;
-        align-items: center;
-        gap: 2px;
-        height: 60vh;
-        padding: 60px 2% 0;
-        /* color: #fff; */
-        visibility: hidden;
-        opacity: 0;
-        animation: show-content 1.5s linear forwards;
-        animation-delay: 1.6s;
     }
 }
