@@ -30,8 +30,8 @@ a {
 }
 
 .navbar {
-    position: fixed;
-    left: 0;
+    position: absolute;
+    left: -100px;
     right: 0;
     width: 90%;
     padding: 25px 9%;
@@ -56,16 +56,18 @@ a {
 .navbar .logo {
     font-size: 30px;
     font-weight: 700;
+    left: 500px;
 }
 
 .navbar ul {
     display: flex;
     gap: 5px;
+    left: 500px;
 }
 
 .navbar ul li {
     list-style: none;
-    margin-left: 35px;
+    margin-left: 40px;
 
 }
 
@@ -296,6 +298,7 @@ a {
         padding: 0;
         box-sizing: border-box;
         font-family: 'poppins', sans-serif;
+        left: -8%;
     }
 
     .navbar ul {
@@ -319,11 +322,12 @@ a {
     .navbar .logo {
         font-size: 25px;
         font-weight: 700;
+        left: -8%;
     }
 
     .navbar {
         position: absolute;
-        left: 0;
+        left: -7%;
         right: 0;
         width: 100%;
         padding: 25px 9%;
@@ -431,7 +435,7 @@ a {
 
     .navbar {
         position: absolute;
-        left: 0;
+        left: -7%;
         right: 0;
         width: 100%;
         padding: 25px 9%;
@@ -539,7 +543,7 @@ a {
 
     .navbar {
         position: absolute;
-        left: 0;
+        left: -7%;
         right: 0;
         width: 100%;
         padding: 25px 9%;
@@ -739,7 +743,7 @@ a {
 
     .navbar {
         position: absolute;
-        left: 0;
+        left: -7%;
         right: 0;
         width: 100%;
         padding: 25px 9%;
@@ -860,7 +864,7 @@ a {
 
     .navbar {
         position: absolute;
-        left: 0;
+        left: -7%;
         right: 0;
         width: 100%;
         padding: 25px 9%;
@@ -1003,7 +1007,7 @@ a {
 
     .navbar {
         position: absolute;
-        left: 0;
+        left: -7%;
         right: 0;
         width: 100%;
         padding: 25px 9%;
