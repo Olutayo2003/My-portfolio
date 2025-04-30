@@ -11,11 +11,22 @@ body {
     /* background: #1f242d; */
     width: 100%;
     max-height: 100%;
+    margin: 0;
 }
 
 a {
     color: #fff;
     text-decoration: none;
+}
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#menu-toggle {
+    display: none;
 }
 
 .navbar {
@@ -67,7 +78,6 @@ a {
 .navbar ul li:hover a {
     color: #7cf03d
 }
-
 .home {
     display: flex;
     align-items: center;
@@ -1444,6 +1454,44 @@ a {
 }
 
 @media screen and (max-width: 400px) {
+    .navbar {
+        display: block;
+        flex-direction: row;
+        align-items: flex-end;
+        padding: 20px 5%;
+    }
+
+    .menu-icon {
+        display: block;
+        margin-left: 270px;
+        color: #fff;
+    }
+
+    .navbar ul {
+        display: inline-block;
+        /* flex-direction: column;
+        align-items: flex-end; */
+        width: 100%;
+        gap: 10px;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.5s ease, opacity 0.5s ease;
+    }
+
+    #menu-toggle:checked + .menu-icon + ul {
+        max-height: 800px; /* adjust as needed */
+        opacity: 1;
+    }
+
+    .navbar ul li {
+        margin-left: 250px;
+    }
+
+    .navbar ul li a {
+        font-size: 18px;
+        align-items: flex-end;
+    }
     .home {
         /* max-width: 100%; */
         display: flex;
@@ -1458,6 +1506,7 @@ a {
         animation: show-content 1.5s linear forwards;
         animation-delay: 1.6s;
     }
+
     .home-img .img-box {
         position: relative;
         width: 30vw;
@@ -1479,5 +1528,14 @@ a {
         width: 120%;
         object-fit: fill;
         mix-blend-mode: lighten;
+    }
+
+    .home-info .btn-sci {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        height: 10vh;
+        /* left: 20px; */
     }
 }
